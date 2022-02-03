@@ -26,6 +26,7 @@ body {
 
 .health-day {
     height: 964px;
+    overflow-x: hidden;
 }
 
 .arrow:hover {
@@ -54,6 +55,68 @@ body {
     position: relative;
     left: calc(100% - 25px);
     top: calc(100% - 25px);
+}
+
+.video {
+    object-fit: cover;
+    width: 951px; 
+    height: 964px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+/* .play-video-ferst:hover {
+    background-color: rgba(255, 255, 255, 0.397);
+} */
+
+.play-video-ferst {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 1s;
+    margin-top: -6%;
+    margin-left: 4%;
+    position: relative;
+    z-index: 10;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.397);
+}
+
+.play-welcom-video {
+    height: 20px;
+    width: 20px;
+    left: calc(100% - 23px);
+    top: calc(100% - 25px);
+    position: relative;
+}
+
+/* .pause-video-ferst:hover {
+    background-color: rgba(255, 255, 255, 0.397);
+} */
+
+.pause-video-ferst {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 1s;
+    position: relative;
+    z-index: 100;
+    margin-left: 4%;
+    margin-top: -6%;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.397);
+}
+
+
+.pause-welcom-video {
+    height: 25px;
+    width: 25px;
+    left: calc(100% - 28px);
+    top: calc(100% - 27px);
+    position: relative;
 }
 
 
@@ -90,7 +153,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     margin:auto;
-    margin-top: 5%;
+    
 }
 
 .item {
@@ -98,6 +161,8 @@ body {
     height: 500px;
     background-color: lightgray;
     border-radius: 3%;
+    position: relative;
+    z-index: 1;
 }
 
 .text-day {
@@ -107,4 +172,65 @@ body {
     margin: auto;
     margin-top: 5%;
     font-weight: 300;
+}
+
+
+
+.right-left {
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    top: 270px;
+    position: relative;
+}
+
+.left:hover {
+    opacity: 0.5;
+}
+
+.right:hover {
+    opacity: 0.5;
+}
+
+.left {
+    width: 50px;
+    height: 50px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    position: relative;
+}
+
+.right {
+    width: 50px;
+    height: 50px;
+    transform: rotate(270deg);
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+/* More information */
+
+.more-information {
+    height: 1130px;
+    
+}
+
+.box-video {
+    width: 1710px;
+    height: 840px;
+    background-color: lightgray;
+    border-radius: 20px;
+    margin:auto;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.title-box-video {
+    margin-top: 0;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 500;
 }
