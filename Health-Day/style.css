@@ -159,10 +159,30 @@ body {
 .item {
     width: 500px;
     height: 500px;
-    background-color: lightgray;
     border-radius: 3%;
     position: relative;
     z-index: 1;
+    
+}
+/*  */
+.slick-track{
+    display: flex;
+    justify-content: space-evenly;
+    margin:auto;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+/*  */
+.pictures {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 3%;
+    position: relative;
+    z-index: 1;
+    
 }
 
 .text-day {
@@ -176,39 +196,40 @@ body {
 
 
 
-.right-left {
+.slider-box>.slick-arrow {
     display: flex;
     justify-content: space-between;
     z-index: 10;
-    top: 270px;
+    top: 230px;
     position: relative;
+    font-size: 0;
+    width: 200px;
+    height: 31px;
+    border: none;
 }
 
-.left:hover {
+.slick-arrow.slick-prev:hover {
     opacity: 0.5;
 }
 
-.right:hover {
+.slick-arrow.slick-next:hover {
     opacity: 0.5;
 }
 
-.left {
-    width: 50px;
-    height: 50px;
+.slider-box>.slick-arrow.slick-prev {
+    cursor: pointer;
     transform: rotate(90deg);
-    cursor: pointer;
-    position: relative;
+    background: url(assets/right-left.svg) 0 0 / 100% no-repeat;
+    margin-right: 71px;
 }
 
-.right {
-    width: 50px;
-    height: 50px;
+.slider-box>.slick-arrow.slick-next {
+    cursor: pointer;
+    background: url(assets/right-left.svg) 0 0 / 100% no-repeat;
     transform: rotate(270deg);
-    cursor: pointer;
-    position: relative;
 }
 
-
+/*  */
 
 /* More information */
 
@@ -233,4 +254,11 @@ body {
     text-align: center;
     padding-top: 5%;
     font-weight: 500;
+}
+
+.video-visitka {
+    object-fit: cover;
+    width: 1710px;
+    height: 840px;
+    border-radius: 20px;
 }
