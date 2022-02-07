@@ -163,6 +163,13 @@ body {
     border-radius: 3%;
     position: relative;
     z-index: 1;
+    
+}
+
+.pictures {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
 }
 
 .text-day {
@@ -233,4 +240,11 @@ body {
     text-align: center;
     padding-top: 5%;
     font-weight: 500;
+}
+
+.video-visitka {
+    object-fit: cover;
+    width: 1710px;
+    height: 840px;
+    border-radius: 20px;
 }
