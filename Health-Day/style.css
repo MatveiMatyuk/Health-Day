@@ -57,8 +57,6 @@ body {
     top: calc(100% - 25px);
 }
 
-
-
 .video {
     object-fit: cover;
     width: 100%; 
@@ -67,6 +65,10 @@ body {
     position: relative;
     z-index: 1;
 }
+
+/* .play-video-ferst:hover {
+    background-color: rgba(255, 255, 255, 0.397);
+} */
 
 .play-video-ferst {
     height: 30px;
@@ -90,6 +92,10 @@ body {
     position: relative;
 }
 
+/* .pause-video-ferst:hover {
+    background-color: rgba(255, 255, 255, 0.397);
+} */
+
 .pause-video-ferst {
     height: 30px;
     width: 30px;
@@ -103,6 +109,7 @@ body {
     display: none;
     background-color: rgba(255, 255, 255, 0.397);
 }
+
 
 .pause-welcom-video {
     height: 25px;
@@ -130,6 +137,7 @@ body {
 
 .what-this {
     /* height: 964px; */
+    /* background-color: rgb(212, 209, 209); */
     background-color: white;
 }
 
@@ -149,8 +157,8 @@ body {
 }
 
 .item {
-    width: 500px;
-    height: 500px;
+    width: 26vw;
+    height: 51.8vh;
     border-radius: 3%;
     position: relative;
     z-index: 1;
