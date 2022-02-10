@@ -11,13 +11,62 @@ body {
     
 }
 
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    top: 107px;
+    margin-top: -69px;
+}
+
+.logo {
+    width: 3.1vw;
+    height: 6.2vh;
+}
+
+.language {
+    display: flex;
+    justify-content: space-between;
+    width: 3.5vw;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: -38px;
+    z-index: 100;
+}
+
+.slash {
+    cursor: default;
+}
+
+.ru:hover {
+    color: gray;
+}
+.en:hover {
+    color: gray;
+}
+
+.ru {
+    cursor: pointer;
+    transition: 1s;
+}
+
+.en {
+    cursor: pointer;
+     transition: 1s;
+}
+
 /* .welcom {
 } */
 
 .welcom-box {
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 964px;
+    height: 100vh;
     align-items: center;
     margin: auto;
     background-color: black;
@@ -25,8 +74,9 @@ body {
 }
 
 .health-day {
-    height: 964px;
+    height: 100vh;
     overflow-x: hidden;
+
 }
 
 .arrow:hover {
@@ -60,7 +110,7 @@ body {
 .video {
     object-fit: cover;
     width: 100%; 
-    height: 964px;
+    height: 100vh;
     display: block;
     position: relative;
     z-index: 1;
@@ -130,7 +180,7 @@ body {
 
 .health-video {
     background-color: lightgray;
-    height: 964px;
+    height: 100vh;
 }
 
 /* What this day */
