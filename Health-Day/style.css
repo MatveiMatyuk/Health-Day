@@ -181,6 +181,7 @@ body {
 .health-video {
     background-color: lightgray;
     height: 100vh;
+    display: block;
 }
 
 /* What this day */
@@ -284,7 +285,7 @@ body {
 /* More information */
 
 .more-information {
-    height: 1130px;
+    height: 117.2vh;
     margin:auto;
 }
 
@@ -358,6 +359,7 @@ body {
     /* background-color: lightgray; */
     object-fit: cover;
     /* border-radius: 10%; */
+    display: block;
 }
 
 .tiens-box01 {
@@ -383,6 +385,7 @@ body {
     height: 25.9vh;
     background-color: lightgray;
     object-fit: cover;
+    display: block;
 }
 
 .tiens-box02 {
@@ -413,6 +416,7 @@ body {
     height: 25.9vh;
     background-color: lightgray;
     object-fit: cover;
+    display: block;
 }
 
 .tiens-box03 {
@@ -431,6 +435,7 @@ body {
     height: 25.9vh;
     background-color: lightgray;
     object-fit: cover;
+    display: block;
 }
 
 .fourth-text-tiens {
@@ -444,4 +449,109 @@ body {
     font-weight: 300;
     width: 36.5vw;
     text-align:justify;
+}
+
+
+
+@media screen and (max-width: 376px) {
+
+    .welcom-box {
+        grid-template-columns: 100%;
+    }
+
+    .header {
+        padding-right: 67px;
+    }
+
+    .logo {
+        width: 13.1vw;
+    }
+
+    .health-video {
+        display: none;
+    }
+
+    .day-this {
+        margin-top: 50%;
+    }
+
+    .text-day {
+        width: 96.9vw;
+        font-size: 19px;
+    }
+
+    .video-visitka {
+        height: 40vh;
+    }
+
+    .more-information {
+        height: 60.2vh;
+    }
+
+    .tiens-box {
+        grid-template-columns: 44.5vw;
+        margin-top: 40px;
+    }
+
+    .ferst-text-tiens {
+        font-size: 13px;
+        width: 84.5vw;
+    }
+
+    .tiens-box01 {
+        grid-template-columns: 44.5vw;
+        margin-top: 40px;
+    }
+
+    .second-text-tiens {
+        font-size: 15px;
+        width: 84.5vw;
+    }
+
+    .tiens-box02 {
+        grid-template-columns: 44.5vw;
+        margin-top: 5px;
+    }
+
+    .threeth-text-tiens {
+        font-size: 15px;
+    }
+
+    .div-tiens>ul>li {
+        font-size: 15px;
+        width: 84.5vw;
+        padding-right: 10px;
+    }
+
+    .tiens-box03 {
+        grid-template-columns: 44.5vw;
+        margin-top: 5px;
+    }
+
+    .fourth-text-tiens {
+        font-size: 15px;
+        width: 84.5vw;
+    }
+
+    .div-tiens01>ul>li {
+        font-size: 15px;
+        width: 84.5vw;
+        padding-right: 10px;
+    }
+
+    .ferst-photo-tiens {
+        display: none;
+    }
+
+    .second-photo-tiens {
+        display: none;
+    }
+
+    .threeth-photo-tiens {
+        display: none;
+    }
+
+    .fourth-photo-tiens {
+        display: none;
+    }
 }

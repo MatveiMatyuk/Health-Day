@@ -118,7 +118,7 @@ language01.addEventListener('click', changeURLLanguage01);
 function changeURLLanguage(){
     location.href = window.location.pathname + '#' + 'en';
     location.reload();
-    language.style.color = gray;
+    // language.style.color = gray;
 }
 
 function changeURLLanguage01(){
