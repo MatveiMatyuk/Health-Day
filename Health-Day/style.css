@@ -453,7 +453,7 @@ body {
 
 
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 376px) and (max-height: 813px) {
 
     .welcom-box {
         grid-template-columns: 100%;
@@ -473,6 +473,7 @@ body {
 
     .day-this {
         margin-top: 50%;
+        font-size: 63px;
     }
 
     .text-day {
@@ -487,18 +488,18 @@ body {
 
     .pictures {
         width: 27vw;
-        height: 11.8vh;
+        height: 14.8vh;
     }
 
     .item {
         width: 27vw;
-        height: 11.8vh;
+        height: 14.8vh;
     }
 
     .slider-box>.slick-arrow {
         width: 10.4vw;
         height: 3.2vh;
-        top: 34px;
+        top: 39px;
     }
 
     .video-visitka {
@@ -575,5 +576,138 @@ body {
 
     .fourth-photo-tiens {
         display: none;
+    }
+}
+
+@media screen and (max-width: 415px) and (max-height: 823px) {
+
+    .welcom-box {
+        grid-template-columns: 100%;
+    }
+
+    .header {
+        padding-right: 67px;
+    }
+
+    .logo {
+        width: 13.1vw;
+    }
+
+    .health-video {
+        display: none;
+    }
+
+    .day-this {
+        margin-top: 70%;
+        font-size: 63px;
+    }
+
+    .text-day {
+        width: 96.9vw;
+        font-size: 19px;
+        margin-top: 18%;
+    }
+
+    .slider-box>.slick-arrow.slick-prev {
+        margin-right: 7px;
+    }
+
+    .pictures {
+        width: 27vw;
+        height: 14.8vh;
+    }
+
+    .item {
+        width: 27vw;
+        height: 14.8vh;
+    }
+
+    .slider-box>.slick-arrow {
+        width: 10.4vw;
+        height: 3.2vh;
+        top: 44px;
+    }
+
+    .video-visitka {
+        height: 40vh;
+    }
+
+    .more-information {
+        height: 60.2vh;
+    }
+
+    .tiens-box {
+        grid-template-columns: 44.5vw;
+        margin-top: 40px;
+    }
+
+    .ferst-text-tiens {
+        font-size: 13px;
+        width: 84.5vw;
+    }
+
+    .tiens-box01 {
+        grid-template-columns: 44.5vw;
+        margin-top: 40px;
+    }
+
+    .second-text-tiens {
+        font-size: 15px;
+        width: 84.5vw;
+    }
+
+    .tiens-box02 {
+        grid-template-columns: 44.5vw;
+        margin-top: 5px;
+    }
+
+    .threeth-text-tiens {
+        font-size: 15px;
+    }
+
+    .div-tiens>ul>li {
+        font-size: 15px;
+        width: 84.5vw;
+        padding-right: 10px;
+    }
+
+    .tiens-box03 {
+        grid-template-columns: 44.5vw;
+        margin-top: 5px;
+        height: 331px;
+    }
+
+    .fourth-text-tiens {
+        font-size: 15px;
+        width: 84.5vw;
+    }
+
+    .div-tiens01>ul>li {
+        font-size: 15px;
+        width: 84.5vw;
+        padding-right: 10px;
+    }
+
+    .ferst-photo-tiens {
+        display: none;
+    }
+
+    .second-photo-tiens {
+        display: none;
+    }
+
+    .threeth-photo-tiens {
+        display: none;
+    }
+
+    .fourth-photo-tiens {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 376px) and (max-height: 667px) {
+    .day-this {
+        margin-top: 47%;
+        font-size: 63px;
     }
 }
