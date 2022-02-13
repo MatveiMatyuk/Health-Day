@@ -478,6 +478,27 @@ body {
     .text-day {
         width: 96.9vw;
         font-size: 19px;
+        margin-top: 18%;
+    }
+
+    .slider-box>.slick-arrow.slick-prev {
+        margin-right: 7px;
+    }
+
+    .pictures {
+        width: 27vw;
+        height: 11.8vh;
+    }
+
+    .item {
+        width: 27vw;
+        height: 11.8vh;
+    }
+
+    .slider-box>.slick-arrow {
+        width: 10.4vw;
+        height: 3.2vh;
+        top: 34px;
     }
 
     .video-visitka {
@@ -526,6 +547,7 @@ body {
     .tiens-box03 {
         grid-template-columns: 44.5vw;
         margin-top: 5px;
+        height: 331px;
     }
 
     .fourth-text-tiens {
