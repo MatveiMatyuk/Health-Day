@@ -473,7 +473,7 @@ body {
 
     .day-this {
         margin-top: 50%;
-        font-size: 63px;
+        font-size: 57px;
     }
 
     .text-day {
@@ -599,7 +599,7 @@ body {
 
     .day-this {
         margin-top: 70%;
-        font-size: 63px;
+        font-size: 57px;
     }
 
     .text-day {
@@ -708,6 +708,19 @@ body {
 @media screen and (max-width: 376px) and (max-height: 667px) {
     .day-this {
         margin-top: 47%;
-        font-size: 63px;
+        font-size: 57px;
     }
+}
+
+
+@media screen and (max-width: 321px) and (max-height: 569px) { 
+    .day-this {
+        margin-top: 47%;
+        font-size: 44px;
+    }
+
+    .slider-box>.slick-arrow {
+        top: 33px;
+    }
+
 }
