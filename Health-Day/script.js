@@ -28,11 +28,19 @@ $(document).ready(function(){
     $('.slider-box').slick({
         arrows:true,
         slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+       
     });
 });
+
+
+$(function(){
+    if ( $(window).width() > 376 ) {
+  
+    }
+  });
 
 
 
@@ -40,8 +48,8 @@ $(document).ready(function(){
 
 const langArr = {
     "day-this" : {
-        "ru": "День здоровья —<br>Это прекрасно",
-        "en": "Health Day —<br>This pearfect",
+        "ru": "День здоровья",
+        "en": "Health Day",
     },
     "title-box-what" : {
         "ru": "Что такое день здоровья?",
@@ -134,7 +142,7 @@ function changeLanguage(){
     hash = hash.substr(1);
     console.log(hash)
     if (!allLang.includes(hash)){
-        location.href = window.location.pathname + '#en';
+        location.href = window.location.pathname + '#ru';
         location.reload();
     }
     language.value = hash;
