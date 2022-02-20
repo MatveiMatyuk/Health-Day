@@ -455,7 +455,7 @@ body {
 
 
 
-@media screen and (max-width: 376px) and (max-height: 813px) {
+@media screen and (max-width: 376px)  {
 
     .slick-list {
         padding-left: 8px;
@@ -492,7 +492,7 @@ body {
     .text-day {
         width: 96.9vw;
         font-size: 19px;
-        margin-top: 18%;
+        margin-top: 15%;
     }
 
     .slider-box>.slick-arrow.slick-prev {
@@ -594,7 +594,7 @@ body {
     }
 }
 
-@media screen and (max-width: 415px) and (max-height: 823px) {
+@media screen and (max-width: 415px) {
 
     .welcom-box {
         grid-template-columns: 100%;
@@ -620,7 +620,7 @@ body {
     .text-day {
         width: 96.9vw;
         font-size: 19px;
-        margin-top: 18%;
+        margin-top: 15%;
     }
 
     .slider-box>.slick-arrow.slick-prev {
