@@ -160,18 +160,3 @@ function changeLanguage(){
 changeLanguage();
 
 
-// scroll video
-
-const myvid = $('.video-visitka')[0];
-$(window).scroll(function(){
-  let scroll = $(this).scrollTop();
-  scroll > 2112 ? myvid.pause() : myvid.play()
-})
-// $(window).scroll(function(){
-//     let scroll01 = $(this).scrollBottom();
-//     scroll01 > 1000 ? myvid.pause() : myvid.play()
-//   })
-// $(window).scroll(function(){
-//   let scroll01 = $(this).scrollDown();
-//   scroll01 < 1500 ? myvid.pause() : myvid.play()
-// })
