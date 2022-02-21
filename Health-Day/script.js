@@ -5,19 +5,18 @@ let video;
 
 video = document.querySelector(".video");
 
-play_video.addEventListener('click', function (){
-    video.play()
-    play_video.style.display = 'none';
-    pause_video.style.display = 'block';
-    console.log('2')
-});
-
-
 pause_video.addEventListener('click', function (){
     video.pause()
     play_video.style.display = 'block';
     pause_video.style.display = 'none';
     console.log('1')
+});
+
+play_video.addEventListener('click', function (){
+    video.play()
+    play_video.style.display = 'none';
+    pause_video.style.display = 'block';
+    console.log('2')
 });
 
 
@@ -34,14 +33,6 @@ $(document).ready(function(){
        
     });
 });
-
-
-$(function(){
-    if ( $(window).width() > 376 ) {
-  
-    }
-  });
-
 
 
 // change language
@@ -167,3 +158,20 @@ function changeLanguage(){
 }
 
 changeLanguage();
+
+
+// scroll video
+
+const myvid = $('.video-visitka')[0];
+$(window).scroll(function(){
+  let scroll = $(this).scrollTop();
+  scroll > 2112 ? myvid.pause() : myvid.play()
+})
+// $(window).scroll(function(){
+//     let scroll01 = $(this).scrollBottom();
+//     scroll01 > 1000 ? myvid.pause() : myvid.play()
+//   })
+// $(window).scroll(function(){
+//   let scroll01 = $(this).scrollDown();
+//   scroll01 < 1500 ? myvid.pause() : myvid.play()
+// })
