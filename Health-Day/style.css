@@ -1,0 +1,868 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Heebo', sans-serif;
+    
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    top: 107px;
+    margin-top: -69px;
+}
+
+.logo {
+    width: 3.1vw;
+    height: 6.2vh;
+}
+
+.language {
+    display: flex;
+    justify-content: space-between;
+    width: 3.5vw;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: -38px;
+    z-index: 100;
+}
+
+.slash {
+    cursor: default;
+}
+
+.ru:hover {
+    color: gray;
+}
+.en:hover {
+    color: gray;
+}
+
+.ru {
+    cursor: pointer;
+    transition: 1s;
+}
+
+.en {
+    cursor: pointer;
+     transition: 1s;
+}
+
+/* .welcom {
+} */
+
+.welcom-box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    align-items: center;
+    margin: auto;
+    background-color: #a2c4bc;
+    color: white;
+}
+
+.health-day {
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+
+.arrow:hover {
+    background-color: rgb(90, 90, 90);
+    
+}
+
+.arrow {
+    height:30px;
+    width:30px;
+    cursor: pointer;
+    margin: auto;
+    transition: 1s;
+    border-radius: 50%;
+    margin-top: 30%;
+}
+
+.yakor {
+    text-decoration: none;
+}
+
+
+.arrow-down {
+    height:20px;
+    width:20px;
+    position: relative;
+    left: calc(100% - 25px);
+    top: calc(100% - 25px);
+}
+
+.video {
+    object-fit: cover;
+    width: 100%; 
+    height: 100vh;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+/* .play-video-ferst:hover {
+    background-color: rgba(255, 255, 255, 0.397);
+} */
+
+.play-video-ferst {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 1s;
+    margin-top: -6%;
+    margin-left: 4%;
+    position: relative;
+    z-index: 10;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.397);
+}
+
+.play-welcom-video {
+    height: 20px;
+    width: 20px;
+    left: calc(100% - 23px);
+    top: calc(100% - 25px);
+    position: relative;
+}
+
+/* .pause-video-ferst:hover {
+    background-color: rgba(255, 255, 255, 0.397);
+} */
+
+.pause-video-ferst {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 1s;
+    position: relative;
+    z-index: 100;
+    margin-left: 4%;
+    margin-top: -6%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.397);
+}
+
+
+.pause-welcom-video {
+    height: 25px;
+    width: 25px;
+    left: calc(100% - 28px);
+    top: calc(100% - 27px);
+    position: relative;
+}
+
+
+.day-this {
+    
+    font-size: 96px;
+    text-align: center;
+    margin-top: 41%;
+    
+}
+
+.health-video {
+    background-color: lightgray;
+    height: 100vh;
+    display: block;
+}
+
+/* What this day */
+
+.what-this {
+    /* height: 964px; */
+    /* background-color: rgb(212, 209, 209); */
+    background-color: white;
+}
+
+.title-box-what {
+    margin-top: 0;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 500;
+}
+
+.slider-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin:auto;
+    
+}
+
+.item {
+    width: 26vw;
+    height: 51.8vh;
+    border-radius: 3%;
+    position: relative;
+    z-index: 1;
+    
+}
+/*  */
+.slick-track{
+    display: flex;
+    justify-content: space-evenly;
+    margin:auto;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+/*  */
+.pictures {
+    width: 26vw;
+    height: 51.8vh;
+    object-fit: cover;
+    border-radius: 3%;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.text-day {
+    text-align: center;
+    width: 46.9vw;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 5%;
+    font-weight: 300;
+}
+
+
+
+.slider-box>.slick-arrow {
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    top: 230px;
+    position: relative;
+    font-size: 0;
+    width: 200px;
+    height: 31px;
+    border: none;
+}
+
+.slick-arrow.slick-prev:hover {
+    opacity: 0.5;
+}
+
+.slick-arrow.slick-next:hover {
+    opacity: 0.5;
+}
+
+.slider-box>.slick-arrow.slick-prev {
+    cursor: pointer;
+    transform: rotate(90deg);
+    background: url(assets/right-left.svg) 0 0 / 100% no-repeat;
+    margin-right: 71px;
+    display: block;
+}
+
+.slider-box>.slick-arrow.slick-next {
+    cursor: pointer;
+    background: url(assets/right-left.svg) 0 0 / 100% no-repeat;
+    transform: rotate(270deg);
+    display: block;
+}
+
+/*  */
+
+/* More information */
+
+.more-information {
+    height: 117.2vh;
+    margin:auto;
+}
+
+.box-video {
+    margin:auto;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    margin:auto;
+    width: 89vw;
+    height: 87vh;
+}
+
+.title-box-video {
+    margin-top: 0;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 500;
+}
+
+.video-visitka {
+    object-fit: cover;
+    width: 89vw;
+    height: 87vh;
+    border-radius: 20px;
+    margin:auto;
+}
+
+
+/* tiens information */
+
+.parralax {
+    background-image: url(assets/parralax03.jpg);
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.information-tiens {
+    margin-top: 50px;
+}
+
+.box-information {
+    margin: auto;
+    width: 100%;
+}
+
+.tiens-box {
+    display: grid;
+    grid-template-columns: 44.5vw 44.5vw;
+    align-items: center;
+    justify-items: center;
+    margin-top: 90px;
+    justify-content: center;
+}
+
+
+.ferst-text-tiens {
+    font-size: 18px;
+    font-weight: 300;
+    width: 36.5vw;
+    text-align:justify;
+}
+
+.ferst-photo-tiens {
+    width: 18.2vw;
+    height: 25.9vh;
+    /* background-color: lightgray; */
+    object-fit: cover;
+    /* border-radius: 10%; */
+    display: block;
+}
+
+.tiens-box01 {
+    display: grid;
+    grid-template-columns: 44.5vw 44.5vw;
+    align-items: center;
+    justify-items: center;
+    background-color:rgb(241 236 236 / 72%);
+    margin-top: 90px;
+    height: 300px;
+    justify-content: center;
+}
+
+.second-text-tiens {
+    font-size: 18px;
+    font-weight: 300;
+    width: 36.5vw;
+    text-align:justify;
+}
+
+.second-photo-tiens {
+    width: 18.2vw;
+    height: 25.9vh;
+    background-color: lightgray;
+    object-fit: cover;
+    display: block;
+}
+
+.tiens-box02 {
+    display: grid;
+    grid-template-columns: 44.5vw 44.5vw;
+    align-items: center;
+    justify-items: center;
+    margin-top: 90px;
+    height: 300px;
+    justify-content: center;
+}
+
+.threeth-text-tiens {
+    font-size: 18px;
+    font-weight: 300;
+    text-align:justify;
+}
+
+.div-tiens>ul>li {
+    font-size: 18px;
+    font-weight: 300;
+    width: 36.5vw;
+    text-align:justify;
+}
+
+.threeth-photo-tiens {
+    width: 18.2vw;
+    height: 25.9vh;
+    background-color: lightgray;
+    object-fit: cover;
+    display: block;
+}
+
+.tiens-box03 {
+    display: grid;
+    grid-template-columns: 44.5vw 44.5vw;
+    align-items: center;
+    justify-items: center;
+    background-color:rgb(241 236 236 / 72%);
+    margin-top: 90px;
+    height: 300px;
+    justify-content: center;
+}
+
+.fourth-photo-tiens {
+    width: 18.2vw;
+    height: 25.9vh;
+    background-color: lightgray;
+    object-fit: cover;
+    display: block;
+}
+
+.fourth-text-tiens {
+    font-size: 18px;
+    font-weight: 300;
+    text-align:justify;
+}
+
+.div-tiens01>ul>li {
+    font-size: 18px;
+    font-weight: 300;
+    width: 36.5vw;
+    text-align:justify;
+}
+
+@media screen and (max-width: 1140px) { 
+    .header {
+        margin-top: -85px;
+    }
+
+    .pictures {
+        width: 26vw;
+        height: 19.8vh;
+    }
+    .item {
+        width: 26vw;
+        height: 19.8vh;
+    }
+
+    .slider-box>.slick-arrow.slick-prev {
+        margin-right: 37px;
+    }
+
+    .slider-box>.slick-arrow {
+        top: 116px;
+    }
+
+    .video-visitka {
+        height: 37vh;
+    }
+
+    .box-video {
+        height: 37vh;
+    }
+
+    .more-information {
+        height: 52vh ;
+    }
+    .tiens-box03 {
+        height: 402px;
+    }
+    .ferst-photo-tiens {
+        width: 39.2vw;
+        height: 17.9vh;
+    }
+    .second-photo-tiens {
+        width: 39.2vw;
+        height: 17.9vh;
+    }
+    .threeth-photo-tiens {
+        width: 39.2vw;
+        height: 17.9vh;
+    }
+    .fourth-photo-tiens {
+        width: 39.2vw;
+        height: 17.9vh;
+    }
+
+    .day-this {
+        margin-top: 96%;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .day-this {
+        font-size: 74px;
+    }
+
+    .slider-box>.slick-arrow {
+        top: 87px;
+    }
+    .pause-video-ferst {
+        margin-top: -15%;
+    }
+    .play-video-ferst {
+        margin-top: -15%;
+    }
+    .tiens-box01 {
+        height: 328px;
+    }
+    .tiens-box03 {
+        height: 510px;
+    }
+
+}
+
+@media screen and (max-width: 375px)  {
+
+    .slick-list {
+        padding-left: 8px;
+    }
+
+    .slider-box>.slick-arrow.slick-next { 
+        display: none;
+    }
+    .slider-box>.slick-arrow.slick-prev { 
+        display: none;
+    }
+
+    .welcom-box {
+        grid-template-columns: 100%;
+    }
+
+    .header {
+        padding-right: 67px;
+    }
+
+    .logo {
+        width: 13.1vw;
+    }
+
+    .health-video {
+        display: none;
+    }
+
+    .day-this {
+        margin-top: 50%;
+        font-size: 57px;
+    }
+
+    .text-day {
+        width: 96.9vw;
+        font-size: 19px;
+        margin-top: 15%;
+    }
+
+    .slider-box>.slick-arrow.slick-prev {
+        margin-right: 7px;
+    }
+
+    .pictures {
+        width: 30vw;
+        height: 14.8vh;
+    }
+
+    .item {
+        width: 30vw;
+        height: 14.8vh;
+    }
+
+    .slider-box>.slick-arrow {
+        width: 10.4vw;
+        height: 3.2vh;
+        top: 39px;
+    }
+
+    .video-visitka {
+        height: 40vh;
+    }
+
+    .more-information {
+        height: 60.2vh;
+    }
+
+    .tiens-box {
+        grid-template-columns: 44.5vw;
+        margin-top: 40px;
+    }
+
+    .ferst-text-tiens {
+        font-size: 13px;
+        width: 84.5vw;
+    }
+
+    .tiens-box01 {
+        grid-template-columns: 44.5vw;
+        margin-top: 40px;
+    }
+
+    .second-text-tiens {
+        font-size: 15px;
+        width: 84.5vw;
+    }
+
+    .tiens-box02 {
+        grid-template-columns: 44.5vw;
+        margin-top: 5px;
+    }
+
+    .threeth-text-tiens {
+        font-size: 15px;
+    }
+
+    .div-tiens>ul>li {
+        font-size: 15px;
+        width: 84.5vw;
+        padding-right: 10px;
+    }
+
+    .tiens-box03 {
+        grid-template-columns: 44.5vw;
+        margin-top: 5px;
+        height: 331px;
+    }
+
+    .fourth-text-tiens {
+        font-size: 15px;
+        width: 84.5vw;
+    }
+
+    .div-tiens01>ul>li {
+        font-size: 15px;
+        width: 84.5vw;
+        padding-right: 10px;
+    }
+
+    .ferst-photo-tiens {
+        display: block;
+        width: 84.2vw !important;
+        height: 25.9vh !important; 
+    }
+
+    .second-photo-tiens {
+        display: none;
+    }
+
+    .threeth-photo-tiens {
+        display: block;
+        width: 84.2vw !important;
+        height: 25.9vh !important;
+    }
+
+    .fourth-photo-tiens {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 415px) {
+
+    .welcom-box {
+        grid-template-columns: 100%;
+    }
+
+    .header {
+        padding-right: 67px;
+    }
+
+    .logo {
+        width: 13.1vw;
+    }
+
+    .health-video {
+        display: none;
+    }
+
+    .day-this {
+        margin-top: 70%;
+        font-size: 57px;
+    }
+
+    .text-day {
+        width: 96.9vw;
+        font-size: 19px;
+        margin-top: 15%;
+    }
+
+    .slick-list {
+        padding-left: 8px;
+    }
+
+    .slider-box>.slick-arrow.slick-prev {
+        display: none;
+    }
+    .slider-box>.slick-arrow.slick-next {
+       
+        display: none;
+    }
+
+    .pictures {
+        width: 30vw;
+        height: 14.8vh;
+    }
+
+    .item {
+        width: 30vw;
+        height: 14.8vh;
+    }
+
+    .slider-box>.slick-arrow {
+        width: 10.4vw;
+        height: 3.2vh;
+        top: 44px;
+        
+    }
+
+    .video-visitka {
+        height: 40vh;
+    }
+
+    .more-information {
+        height: 60.2vh;
+    }
+
+    .tiens-box {
+        grid-template-columns: 44.5vw;
+        margin-top: 40px;
+    }
+
+    .ferst-text-tiens {
+        font-size: 13px;
+        width: 84.5vw;
+    }
+
+    .tiens-box01 {
+        grid-template-columns: 44.5vw;
+        margin-top: 40px;
+    }
+
+    .second-text-tiens {
+        font-size: 15px;
+        width: 84.5vw;
+    }
+
+    .tiens-box02 {
+        grid-template-columns: 44.5vw;
+        margin-top: 5px;
+    }
+
+    .threeth-text-tiens {
+        font-size: 15px;
+    }
+
+    .div-tiens>ul>li {
+        font-size: 15px;
+        width: 84.5vw;
+        padding-right: 10px;
+    }
+
+    .tiens-box03 {
+        grid-template-columns: 44.5vw;
+        margin-top: 183px;
+        height: 331px;
+    }
+
+    .fourth-text-tiens {
+        font-size: 15px;
+        width: 84.5vw;
+    }
+
+    .div-tiens01>ul>li {
+        font-size: 15px;
+        width: 84.5vw;
+        padding-right: 10px;
+    }
+
+    .ferst-photo-tiens {
+        display: block;
+        width: 84.2vw !important;
+        height: 25.9vh !important; 
+    }
+
+    .second-photo-tiens {
+        display: none;
+    }
+
+    .threeth-photo-tiens {
+        display: block;
+        width: 84.2vw !important;
+        height: 25.9vh !important;
+    }
+
+    .fourth-photo-tiens {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .day-this {
+        margin-top: 47%;
+        font-size: 57px;
+    }
+}
+
+
+@media screen and (max-width: 321px) { 
+    .day-this {
+        margin-top: 47%;
+        font-size: 44px;
+    }
+
+    .slider-box>.slick-arrow {
+        top: 33px;
+    }
+
+}
+
+@media screen and (max-width: 1440px) { 
+    .tiens-box03 {
+        height: 347px;
+    }
+}
+@media screen and (max-width: 1240px) { 
+    .pause-video-ferst {
+        margin-top: -8%;
+    }
+    .play-video-ferst {
+        margin-top: -8%;
+    }
+}
+@media screen and (max-width: 1140px) { 
+    .tiens-box03 {
+        height: 375px;
+    }
+    .ferst-photo-tiens {
+        width: 25.2vw;
+    }
+    .second-photo-tiens {
+        width: 25.2vw;
+    }
+    .threeth-photo-tiens {
+        width: 25.2vw;
+    }
+    .fourth-photo-tiens {
+        width: 25.2vw;
+    }
+}
+
+
